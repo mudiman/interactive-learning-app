@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GoMadBooks</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="js/lib/jquery-1.10.2.js" type="text/javascript"></script>		
+		<script src="js/lib/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
+		<!-- <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css"> -->
+
+		<script src="js/lib/jquery.easing.1.3.js" type="text/javascript"></script>
+
+		<script src="js/lib/jquery.booklet.latest.min.js" type="text/javascript"></script>
+		<link href="css/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+
+		<script src="js/lib/jquery.mobile-1.4.1.min.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.1.min.css" />
+
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<script src="js/lib/bootstrap.min.js"></script>
+
+		<script src="js/init.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/quiz.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/master.css" />
+	</head>
+	<body>
+		<div id="index" data-role="page">
+			
+			<div data-role="content" id="logindiv" style="display:table-cell; text-align:center; vertical-align:middle;">
+                            <div class="row col-lg-12">
+                            </div>
+			</div>
+		</div>
+                <div id="index" data-role="page">
+			<div data-role="header" data-theme="a" id="loginheader">
+				<h1>Welcome to GoMadBooks</h1>
+			</div>
+			<div data-role="content" id="logindiv" style="display:table-cell; text-align:center; vertical-align:middle;">
+				<form id="check-user" action="api/auth" data-ajax="false"  class="ui-body ui-body-a ui-corner-all">
+					<p id="loginmessage"></p>
+					<div  data-role="fieldcontain"  data-theme="c">
+						<label for="username">Username:</label>
+						<input type="text" name="username" id="username" value="" placeholder="Username" style="width:60%"/>
+					</div>
+					<div  data-role="fieldcontain"  data-theme="c">
+						<label for="password">Password:</label>
+						<input type="password" name="password" id="password" value="" placeholder="Password" style="width:60%"/>
+					</div>
+					<input type="button" data-theme="c" name="submit" id="loginbutton" value="login">
+				</form>
+			</div>
+			<div data-role="footer" data-theme="a">
+			</div>
+		</div>
+		<div id="maindiv" data-role="page" data-theme="a" >
+			<a id="togglebarsbutton" title="toggle fullscreen" style="z-index:1000" href="" data-role="button" data-mini="true" data-inline="true" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-btn-left"></a>
+
+			<div id="headerdiv" data-role="header" >
+				
+					<!-- <img style="float:left;" class="leftbottomcorner img-responsive" src="resources/images/bottom-bar-left.png" /> -->
+					<div  class="menubuttonbar" style="padding-top: 0.5%;">
+						<img width="13%" class="img-responsive" src="resources/images/diamond.png" />
+						<div style="display: inline-block" class="headerfont" >23000</div>
+					</div>
+					<!-- <img style="float:left;" class="rightbottomcorner img-responsive" src="resources/images/bottom-bar-right.png" /> -->
+					<div class="middleheader">
+						<span style="float:left;padding-left:2%" class="headerfont">GEMS FOUND 45</span>
+						<span style="float:right;padding-right:2%" class="headerfont">QUESTIONS 37</span>
+						<span class="clear"></span>
+					</div>
+					<!-- <img style="float:right;" class="rightbottomcorner img-responsive" src="resources/images/bottom-bar-right.png" /> -->
+					<div  class="menubuttonbar" style="float:right;margin-top: -2%;padding-bottom: 1.5%;">
+						<img class="img-responsive" width="13%" src="resources/images/question-mark.png" />
+						<img class="img-responsive" width="13%" src="resources/images/detail-sign.png" />
+						<img class="img-responsive" width="13%" src="resources/images/close-sign.png" />
+					</div>
+					<!-- <img style="float:right;" class="leftbottomcorner img-responsive" src="resources/images/bottom-bar-left.png" /> -->
+					
+					
+					<div class="clear"></div>	
+				
+				
+			</div>
+			<div data-role="content">
+
+				<div id="mybook">
+					<div title="Cover Page">
+						<img  style="display: inline;" width="100%" src="resources/images/cover.png" />
+					</div>
+					<div title="Diamond Page" style="text-align: center;vertical-align: middle" class="contentpage">
+						<img id="clickableimage" style="display: inline;" width="65%" src="resources/images/bg.jpg" />
+					</div>
+
+					<div title="Start page" style="padding:20 10 20 20" class="contentpage" data-scroll='true'>
+						<div style="text-align: center;" >
+							<h3 >Zhou Bao. Book 1</br>
+							Bao</br>and</br>The Light Killers.
+							</br></br>CHAPTER 1</h3>
+						</div>
+						<p >
+							Zhou Bao writhed and struggled in his bed. The
+							sheets wound more and more tightly around his
+							sweaty body until he felt like a giant snake was
+							coiling around him, crushing the air out of his lungs.
+							Suddenly his whole body stiffened; every muscle
+							became tight as a knot.
+							In his feverish mind, Bao dreamed of dazzling
+							colours. They blinded him. Flashes of yellow, red
+							and green stung his eyes and made him jerk and
+							flinch in his sleep. They were like a multi-coloured
+							mortar attack. Gasping for breath, he tried to run
+							away. Careering through the narrow streets of Old
+							Shanghai, his tired legs burning, he tried to outrun
+							the exploding lights but, whichever way he turned,
+						</p>
+					</div>
+					<div title="Page" class="contentpage">
+						<p >
+							there was a dead end ahead and, waiting for him,
+							another blinding explosion of purple or blue. The
+							searing heat scalded his skin.
+							How he wished he could wake up from this
+							nightmare. 
+						</p>
+						<p>
+							He knew he was asleep and he knew
+							he was dreaming, but somehow he couldn't shake
+							off the images of overpowering light. All through
+							the early hours of that humid August morning,
+							rainbow colours tormented his mind.
+						</p>
+					</div>
+					<div title="Another Page" style="text-align: center;vertical-align: middle" class="contentpage">
+						<img id="clickableimage" width="65%" src="resources/images/sleep.png" />
+					</div>
+					<div title="Quiz page 1" class="contentpage quizpage">
+						<h1 style="text-align: center;">Quiz</h1>
+						<div data-role="listview" id="q1">
+
+							<p>
+								1) What do the men chasing Zhou Bao and Grandpa look like?
+							</p>
+							<p class= "ans">
+								<span>a -- a lion and a bear</span>
+							</p>
+							<p class= "ans" >
+								<span>b -- a tiger and a bear</span>
+							</p>
+							<p class= "ans" >
+								<span>c -- a tiger and wolf</span>
+							</p>
+							<p class="correct">
+								<span>b -- a tiger and a bear</span>
+							</p>
+
+						</div>
+						<br>
+						<div data-role="listview" id="q2">
+
+							<p>
+								2) What does Bao tell Grandpa to get him to agree to go home?
+							</p>
+							<p class= "ans" >
+								<span>a -- he's tired</span>
+							</p>
+							<p class= "ans" >
+								<span>b -- he feels ill</span>
+							</p>
+							<p class= "ans" >
+								<span>c -- he's hungry</span>
+							</p>
+							<p class="correct">
+								<span>a -- he's tired</span>
+							</p>
+
+						</div>
+						<br>
+						<div data-role="listview" id="q3" >
+
+							<p>
+								3) How many dragons are there in Grandpa's legend?
+							</p>
+							<p class= "ans" >
+								<span>a -- 9</span>
+							</p>
+							<p class= "ans" >
+								<span>b -- 7</span>
+							</p>
+							<p class= "ans" >
+								<span>c -- 4</span>
+							</p>
+							<p class="correct">
+								<span>c -- 4</span>
+							</p>
+
+						</div>
+					</div>
+					<div title="Quiz" class="contentpage quizpage">
+						<div data-role="listview" id="q4">
+
+							<p>
+								4) How big is the gemstone?
+							</p>
+							<p class= "ans" >
+								<span>a -- the size of a coin</span>
+							</p>
+							<p class= "ans" >
+								<span>b -- the size of Bao's palm</span>
+							</p>
+							<p class= "ans" >
+								<span>c -- the size of a pocket watch</span>
+							</p>
+							<p class="correct">
+								<span>a -- the size of a coin</span>
+							</p>
+
+						</div>
+
+						<br>
+
+						<div data-role="listview" id="q5">
+
+							<p>
+								5) What sport does Bao practice?
+							</p>
+							<p class= "ans" >
+								<span>a -- Kung fu</span>
+							</p>
+							<p class= "ans" >
+								<span>b -- Karate</span>
+							</p>
+							<p class= "ans" >
+								<span>c -- Ju jitsu</span>
+							</p>
+							<p class="correct">
+								<span>b -- Karate</span>
+							</p>
+
+						</div>
+					</div>
+
+					<div title="End Cover"></div>
+				</div>
+				<div id="sparkle" style="display:none;position:absolute; z-index: 9999;">
+					<img src="resources/images/sparkle.png" width="100px" height="100px" />
+				</div>
+				<div id="footerdiv" data-role="footer">
+					<div id="pagePreviewdiv"></div>
+					<input type="range" name="slider-1" id="slider-1" value="1" step="2" min="1" data-mini="true"/>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

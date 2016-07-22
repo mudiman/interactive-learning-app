@@ -1,0 +1,221 @@
+/*#clickableimage {
+  background: url('../resources/images/bg.png') no-repeat;
+  background-size: 100%;
+}*/
+
+body{
+	overflow-y: hidden;
+}
+
+#loginheader{
+	background:#FFCD5B !important;
+	border-bottom: 3px solid black;
+}
+/*Header bar*/
+#headerdiv{
+	/*background:#86cde6;*/
+	background: url('../resources/images/title-bar.png') no-repeat;
+	border:none;
+	background-size: 100% 80%;
+	background-position:top;
+	/*margin-bottom:-0.5%;*/
+}
+.leftbottomcorner{
+	/*background: url('../resources/images/bottom-bar-left.png') no-repeat;*/
+	width:2.11%;
+}
+.rightbottomcorner{
+	/*background: url('../resources/images/bottom-bar-right.png') no-repeat;*/
+	width:2.10%;
+}
+.headerfont{
+	font-size:14px;
+}
+.middleheader{
+	/*background: url('../resources/images/centre-image.png') repeat-x;*/
+	/*border-bottom: 3px solid black;*/
+	padding: 0.4%;
+	width: 46%;
+	float:left;
+	text-align: center;
+	height: 100%;
+	padding-top: 1%;
+	
+}
+.menubuttonbar{
+	/*background:url('../resources/images/mix.png') repeat-x;*/
+	
+	float:left;
+	text-align:center;
+	vertical-align: middle;
+	width:27%;
+	
+	
+}
+
+#pagePreviewdiv{
+	bottom:80% !important;
+	position:absolute;
+	width:101px;
+	height:42px;
+	background:url('../resources/images/story-thumbnail.png') no-repeat;	
+	z-index:1000;
+	display:none;
+}
+
+#togglebarsbutton{
+	background:none !important;
+	border:none !important;
+}
+
+.clear
+{
+	clear:both;
+}
+
+/* JQUERY BOOKLET */
+.b-wrap-left .b-counter{
+	left:46% !important;
+}
+.b-counter{
+	margin-bottom:4% !important;
+	background:none !important;
+}
+.b-wrap-right .b-counter{
+	right:50% !important;
+}
+
+#mybook{
+
+}
+.contentpage{
+	padding:10%;
+	font-size:12px;
+	text-align:justify;
+	line-height: 210% !important;
+	
+	/*padding-left:15%;
+	padding-right:15%;*/
+}
+.quizpage{
+	line-height: 180% !important;
+}
+#maindiv,#logindiv{
+	background:#86cde6;
+}
+#logindiv{
+	border: 2px solid black;
+}
+.b-page-cover{
+	background: #404040 !important;
+}
+
+.b-prev,.b-next{
+	z-index:0;
+}
+
+.b-page:nth-of-type(1){
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	filter:none !important;
+	-ms-filter:none !important;
+}
+.b-page:nth-last-of-type(1){
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	filter:none !important;
+	-ms-filter:none !important;
+}
+
+/*.b-wrap{
+	background: white !important;
+}*/
+
+.b-page{
+	-moz-box-shadow: 0px 1px 10px #70686a,0px -1px 10px #70686a;
+	box-shadow: 0px 1px 10px #70686a,0px -1px 10px #70686a;
+}
+
+.b-page:nth-of-type(10){
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.shadowrightdiv{
+	-moz-box-shadow: 5px 5px 10px 2px #70686a;
+	box-shadow: 5px 5px 10px 2px #70686a;
+}
+.shadowleftdiv{
+	-moz-box-shadow: -5px 5px 10px 2px #70686a;
+	box-shadow: -5px 5px 10px 2px #70686a;
+}
+
+.b-wrap-left{
+/*   box-shadow: -30px 0px 35px -10px #E0E0E0 inset; */
+  background-image:url('../resources/images/gutter_shadow_left.png') !important;
+  background-repeat:repeat-y !important;
+  background-color:#FFFFFF !important;
+  background-position:center right !important;
+
+}
+
+.b-wrap-right{
+  background-image:url('../resources/images/gutter_shadow_right.png') !important;
+  background-repeat:repeat-y !important;
+  background-color:#FFFFFF !important;
+  background-position:center left !important;
+
+}
+
+.b-arrow{
+	background-color:rgba(255,0,0,0.4);
+	width:3% !important;
+}
+.b-arrow div{
+	top:47% !important;
+    width: 100% !important;
+    background-size: 90% !important;
+    opacity:0.5;
+}
+.b-arrow-prev{
+	border-radius:25px 0 0 25px;
+	left:-3% !important;
+	
+}
+
+.b-arrow-next{
+	border-radius:0 25px 25px 0;
+	right: -3% !important;
+	
+}
+.b-arrow-next div{
+	left: 8% !important;
+	
+}
+
+.b-wrap{
+	padding:0 !important;
+	width:100% !important;
+	height:100% !important;
+}
+
+/* JQUERY MOBILE SLIDER CSS */
+#slider-1{
+	display: none;
+}
+.ui-slider-handle{
+	width: 5% !important;
+	background-color: #e7acae !important;
+}
+.ui-slider-track{
+	margin:0 5% 0 5% !important;
+	background:#f6f6f6 !important;
+}
+
+#footerdiv{
+	background:none;
+	border:none;
+	bottom: -2%;
+}
+

@@ -1,0 +1,257 @@
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #86CDE6;
+}
+#siderbarmenu li {
+	display: block;
+}
+#controlpaneldiv {
+	display: inline-block;
+	width: 29%;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	text-align: right;
+	vertical-align: bottom;
+}
+#bookselect {
+	width: 80%;
+}
+#pageselect {
+	width: 80%;
+}
+
+#controlpaneldiv a {
+	padding-right: 10px;
+}
+#header {
+	background: #FFCD5B;
+	padding-left: 10px;
+	border-bottom: 2px solid black;
+}
+#header h1 {
+	display: inline-block;
+	width: 70%;
+}
+#footer {
+	background: grey;
+}
+
+#sidebar {
+	float: left;
+	height: 100%;
+	width: 13%;
+}
+#pages {
+	width: 80%;
+	heigth: 100%;
+}
+#sidebar #siderbarmenu {
+	padding-left: 9px;
+}
+#rightbar {
+	float: right;
+	height: 100%;
+	width: 20%;
+	margin-top: -12.5%;
+}
+
+.post {
+	float: left;
+	width: 70%;
+	padding: 10px;
+}
+
+.clear {
+	float: clear;
+}
+
+
+/* Bootstrap theme */
+.navbar-default {
+	background-color: #FFCD5B !important;
+	border-bottom: 4px solid black; !important;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #FFA114 !important;
+}
+.top-buffer { margin-top:44px; }
+
+.page-header{
+	margin-top:0px !important;
+}
+
+/* quize page */
+.quizAnswerText,.quizAnswersShow > label{
+    color:#86CDE6;
+    padding-left: 10px;
+    line-height: 8px;
+}
+
+.quizAnswerText:hover{
+    opacity: 0.6;
+}
+.quizpage{
+	padding:13%;
+	font-size:12px;
+	text-align:justify;
+	line-height: 210% !important;
+}
+.quizAnswersShow{
+	line-height: 6px;
+}
+
+/* JQUERY BOOKLET */
+.b-wrap-left .b-counter{
+	left:46% !important;
+}
+.b-counter{
+	margin-bottom:4% !important;
+	background:none !important;
+}
+.b-wrap-right .b-counter{
+	right:50% !important;
+}
+
+#mybook{
+
+}
+.contentpage{
+	padding:10%;
+	font-size:12px;
+	text-align:justify;
+	line-height: 210% !important;
+}
+
+.imagepage{
+	padding:10%;
+	font-size:12px;
+	text-align:center;
+	line-height: 210% !important;
+	
+	/*padding-left:15%;
+	padding-right:15%;*/
+}
+
+
+.quizpage{
+	line-height: 180% !important;
+}
+#maindiv,#logindiv{
+	background:#86cde6;
+}
+#logindiv{
+	border: 2px solid black;
+}
+.b-page-cover{
+	background: #404040 !important;
+}
+
+.b-prev,.b-next{
+	z-index:0;
+}
+
+.b-page:nth-of-type(1){
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	filter:none !important;
+	-ms-filter:none !important;
+}
+.b-page:nth-last-of-type(1){
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	filter:none !important;
+	-ms-filter:none !important;
+}
+
+/*.b-wrap{
+	background: white !important;
+}*/
+
+.b-page{
+	-moz-box-shadow: 0px 1px 10px #70686a,0px -1px 10px #70686a;
+	box-shadow: 0px 1px 10px #70686a,0px -1px 10px #70686a;
+}
+
+.b-page:nth-of-type(10){
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.shadowrightdiv{
+	-moz-box-shadow: 5px 5px 10px 2px #70686a;
+	box-shadow: 5px 5px 10px 2px #70686a;
+}
+.shadowleftdiv{
+	-moz-box-shadow: -5px 5px 10px 2px #70686a;
+	box-shadow: -5px 5px 10px 2px #70686a;
+}
+
+.b-wrap-left{
+/*   box-shadow: -30px 0px 35px -10px #E0E0E0 inset; */
+  background-image:url('../images/gutter_shadow_left.png') !important;
+  background-repeat:repeat-y !important;
+  background-color:#FFFFFF !important;
+  background-position:center right !important;
+
+}
+
+.b-wrap-right{
+  background-image:url('../images/gutter_shadow_right.png') !important;
+  background-repeat:repeat-y !important;
+  background-color:#FFFFFF !important;
+  background-position:center left !important;
+
+}
+
+.b-arrow{
+	background-color:rgba(255,0,0,0.4);
+	width:3% !important;
+}
+.b-arrow div{
+	top:47% !important;
+    width: 100% !important;
+    background-size: 90% !important;
+    opacity:0.5;
+}
+.b-arrow-prev{
+	border-radius:25px 0 0 25px;
+	left:-3% !important;
+	
+}
+
+.b-arrow-next{
+	border-radius:0 25px 25px 0;
+	right: -3% !important;
+	
+}
+.b-arrow-next div{
+	left: 8% !important;
+	
+}
+
+.b-wrap{
+	padding:0 !important;
+	width:100% !important;
+	height:100% !important;
+}
+
+.b-page:nth-of-type(1){
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	filter:none !important;
+	-ms-filter:none !important;
+}
+.b-page:nth-last-of-type(1){
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	filter:none !important;
+	-ms-filter:none !important;
+}
